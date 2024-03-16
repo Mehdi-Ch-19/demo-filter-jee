@@ -13,6 +13,12 @@
 <body>
     <h1>
         Page protected
+        <%
+            HttpSession session1 = request.getSession(false);
+            String username = session1.getAttribute("username").toString();
+            System.out.println( "Bonjour " + username );
+
+        %>
     </h1>
     <form action="LogOutServlet">
         <button type="submit" >LogOut</button>
