@@ -1,7 +1,7 @@
 target/
-!.mvn/wrapper/maven-wrapper.jar
+.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
-!**/src/test/**/target/
+**/src/test/**/target/
 
 ### IntelliJ IDEA ###
 .idea/modules.xml
@@ -11,7 +11,9 @@ target/
 *.iws
 *.iml
 *.ipr
-
+/mvnw
+/mvnw.cmd
+.idea
 ### Eclipse ###
 .apt_generated
 .classpath
